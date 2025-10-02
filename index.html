@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Flavours of Jail — Jail Cafe Of India | Indore</title>
+  <meta name="description" content="Flavours of Jail — Cozy cafe in Indore near Holkar College. See menu, direction, opening hours, and WhatsApp to order or reserve." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#6B4F35">
+
+  <style>
+    :root{
+      --bg:#fff8f3;
+      --accent:#6B4F35; /* coffee brown */
+      --accent-dark:#513726;
+      --muted:#8b7b6a;
+      --cream:#f7efe8;
+      --glass: rgba(255,255,255,0.6);
+      --max-width:1100px;
+    }
+    *{box-sizing:border-box}
+    body{font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial; margin:0; background:var(--bg); color:#2b2b2b; -webkit-font-smoothing:antialiased}
+    a{color:inherit; text-decoration:none}
+    .container{max-width:var(--max-width); margin:0 auto; padding:0 18px}
+
+    /* Header */
+    header{position:sticky; top:0; backdrop-filter: blur(6px); background:linear-gradient(180deg, rgba(255,255,255,0.75), rgba(255,255,255,0.6)); border-bottom:1px solid rgba(100,80,60,0.06); z-index:40}
+    .nav{display:flex; align-items:center; justify-content:space-between; gap:12px; height:64px}
+    .brand{display:flex; gap:12px; align-items:center}
+    .logo{width:44px; height:44px; background:var(--accent); color:#fff; display:grid; place-items:center; font-weight:700; border-radius:8px; box-shadow:0 6px 18px rgba(107,79,53,0.12)}
+    .brand h1{font-size:16px; margin:0}
+    .brand p{font-size:12px;margin:0;color:var(--muted)}
+    nav ul{display:flex; gap:14px; align-items:center; margin:0; padding:0; list-style:none}
+    .cta{display:inline-flex; gap:8px; align-items:center; background:var(--accent); color:white; padding:8px 12px; border-radius:8px; font-weight:600}
+    .secondary{background:transparent; border:1px solid rgba(107,79,53,0.12); padding:8px 10px; border-radius:8px}
+
+    /* Hero */
+    .hero{min-height:58vh; display:grid; align-items:center; padding:36px 0; position:relative}
+    .hero-inner{display:grid; grid-template-columns:1fr; gap:18px; align-items:center}
+    .hero-card{background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.95)); border-radius:14px; padding:18px; box-shadow:0 10px 30px rgba(20,20,20,0.06)}
+    .hero h2{margin:0; font-size:28px}
+    .hero p.lead{color:var(--muted); margin:6px 0 12px}
+    .hero .actions{display:flex; gap:10px; flex-wrap:wrap}
+
+    /* Grid */
+    .grid{display:grid; gap:24px; grid-template-columns:1fr}
+    @media(min-width:880px){
+      .hero-inner{grid-template-columns:1fr 420px}
+      .grid.two{grid-template-columns:1fr 380px}
+    }
+
+    /* Image box */
+    .img-frame{border-radius:12px; overflow:hidden; background:linear-gradient(180deg,#efe7df,#fff); border:1px solid rgba(100,80,60,0.04)}
+    .img-frame img{width:100%; height:100%; object-fit:cover; display:block}
+
+    /* About */
+    .about p{color:var(--muted); line-height:1.5}
+
+    /* Menu */
+    .menu-section{background:linear-gradient(180deg,var(--cream),#fff); padding:18px; border-radius:12px}
+    .menu-grid{display:grid; grid-template-columns:1fr; gap:12px}
+    @media(min-width:640px){.menu-grid{grid-template-columns:repeat(2,1fr)}}
+    .menu-item{display:flex; justify-content:space-between; padding:10px; border-radius:8px; background:white; align-items:center; border:1px solid rgba(20,20,20,0.03)}
+    .price{font-weight:700}
+
+    /* Offer */
+    .offer{border-radius:12px; padding:12px; background:linear-gradient(90deg,#ffe9d2,#fff); border:1px dashed rgba(107,79,53,0.12)}
+
+    /* Reviews */
+    .review{background:white; padding:12px; border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,0.03)}
+
+    /* Map */
+    .map{height:260px; border-radius:10px; overflow:hidden; border:1px solid rgba(0,0,0,0.06)}
+    iframe{width:100%; height:100%; border:0}
+
+    /* Footer */
+    footer{padding:20px 0; color:var(--muted); font-size:14px}
+
+    /* Small */
+    .muted{color:var(--muted)}
+    .pill{display:inline-block; padding:6px 10px; background:var(--glass); border-radius:999px; font-weight:600}
+
+    /* Mobile menu */
+    .burger{display:none; width:44px; height:44px; border-radius:8px; background:transparent; border:1px solid rgba(0,0,0,0.06); align-items:center; justify-content:center}
+    @media(max-width:880px){nav ul{display:none} .burger{display:flex}}
+
+    .small{font-size:13px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">FJ</div>
+        <div>
+          <h1>Flavours of Jail</h1>
+          <p class="small muted">Jail Cafe Of India — Near Holkar College, Indore</p>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#offers">Offers</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#location">Location</a></li>
+        </ul>
+      </nav>
+
+      <div style="display:flex; gap:8px; align-items:center">
+        <a class="secondary" href="tel:+918993997949">📞 Call</a>
+        <a class="cta" id="whatsappBtn" href="https://wa.me/919893997949?text=Hi%20Flavours%20of%20Jail%2C%20I%20want%20to%20order%20or%20reserve%20a%20table%20.%20" target="_blank" rel="noopener">💬 WhatsApp</a>
+        <button class="burger" aria-label="menu" onclick="toggleMenu()">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <div class="hero-card">
+          <h2>Flavours of Jail — Jail Cafe Of India</h2>
+          <p class="lead">Cozy. Bold. A quirky hangout near Holkar College serving handcrafted coffee, comfort snacks and desserts. Open till 11 PM.</p>
+
+          <div class="actions">
+            <a href="tel:+918993997949" class="cta">📞 Call Now</a>
+            <a id="waHero" href="https://wa.me/919893997949?text=Hello%20Flavours%20of%20Jail%2C%20I%20want%20to%20reserve%20a%20table" target="_blank" class="secondary">💬 WhatsApp</a>
+            <a href="#menu" class="secondary">See Menu</a>
+          </div>
+
+          <div style="margin-top:14px; display:flex; gap:10px; align-items:center">
+            <div class="pill">Open 9 AM — 11 PM</div>
+            <div class="muted small">1-2, Shakuntala Complex, AB Rd, Near Holkar College, Indore</div>
+          </div>
+        </div>
+
+        <div class="img-frame">
+          <!-- Replace cafeimg1.jpg with your hero photo. Use same filename in folder. -->
+          <img src="cafeimg1.jpg" alt="Flavours of Jail cafe interior - hero" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section id="about" style="padding:16px 0">
+      <div class="grid two">
+        <div class="about">
+          <h3>About Flavours of Jail</h3>
+          <p>Flavours of Jail started as a tiny experiment — a place for students and coffee lovers to relax and enjoy handcrafted drinks with a twist. We focus on bold coffee, fresh snacks, and a warm vibe that keeps you coming back.</p>
+
+          <h4 style="margin-top:10px">Why visit?</h4>
+          <ul class="muted">
+            <li>Handcrafted espresso-based drinks & cold brews</li>
+            <li>Fresh baked desserts and fast comfort snacks</li>
+            <li>Student discounts & loyalty offer</li>
+          </ul>
+        </div>
+
+        <div class="img-frame">
+          <!-- Replace cafeimg2.jpg with a second photo (exterior or food). -->
+          <img src="cafeimg2.jpg" alt="Flavours of Jail exterior or food photo" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" style="padding:6px 0 20px">
+      <div class="menu-section">
+        <h3>Menu — Popular Picks</h3>
+        <div class="menu-grid" style="margin-top:12px">
+          <div class="menu-item"><div><strong>Espresso</strong><div class="muted small">Single shot of bold espresso</div></div><div class="price">₹80</div></div>
+          <div class="menu-item"><div><strong>Cappuccino</strong><div class="muted small">Espresso, steamed milk, foam</div></div><div class="price">₹120</div></div>
+          <div class="menu-item"><div><strong>Cold Coffee</strong><div class="muted small">Classic chilled blended coffee</div></div><div class="price">₹130</div></div>
+          <div class="menu-item"><div><strong>Caramel Latte</strong><div class="muted small">Espresso with caramel syrup & milk</div></div><div class="price">₹150</div></div>
+
+          <div class="menu-item"><div><strong>Grilled Sandwich</strong><div class="muted small">Cheese, veggies, chutney</div></div><div class="price">₹140</div></div>
+          <div class="menu-item"><div><strong>Brownie with Ice Cream</strong><div class="muted small">Warm chocolate brownie + scoop</div></div><div class="price">₹160</div></div>
+          <div class="menu-item"><div><strong>Pasta Alfredo</strong><div class="muted small">Creamy pasta with herb garnish</div></div><div class="price">₹220</div></div>
+          <div class="menu-item"><div><strong>French Fries</strong><div class="muted small">Crispy shoestring fries</div></div><div class="price">₹90</div></div>
+        </div>
+
+        <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap; align-items:center">
+          <a href="https://wa.me/919893997949?text=Hi%2C%20I%20want%20to%20order%20the%20Brownie%20with%20Ice%20Cream" target="_blank" class="cta">Order via WhatsApp</a>
+          <button onclick="openFullMenu()" class="secondary">View Full Menu (Preview)</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="offers" style="padding:6px 0 20px">
+      <div class="offer">
+        <h3>Special Offer</h3>
+        <p><strong>Student Special:</strong> Show your college ID and get <strong>10% off</strong> on hot beverages (Mon–Fri, 9AM–5PM).</p>
+        <p><strong>Loyalty Card:</strong> Buy 5 coffees and get the 6th free. Ask for a stamp card at the counter.</p>
+      </div>
+    </section>
+
+    <section id="reviews" style="padding:10px 0">
+      <h3>What customers say</h3>
+      <div style="display:grid; gap:12px; margin-top:10px">
+        <div class="review">
+          <strong>Ayesha R.</strong> <span class="muted small">— Student</span>
+          <p class="muted small">"Cozy place, perfect for studying and hanging out. The cold coffee is a must-try!"</p>
+        </div>
+        <div class="review">
+          <strong>Raman P.</strong> <span class="muted small">— Foodie</span>
+          <p class="muted small">"Quick service and tasty snacks. Love the brownie with ice cream."</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="location" style="padding:12px 0 28px">
+      <h3>Find us</h3>
+      <div class="grid two" style="align-items:start">
+        <div>
+          <p class="muted">Address:</p>
+          <p><strong>1-2, Shakuntala Complex, AB Rd, Near Holkar College, Angad Kapoor Region, Janki Nagar, Indore, Madhya Pradesh 452014</strong></p>
+
+          <p class="muted" style="margin-top:8px">Opening hours: <strong>9 AM — 11 PM</strong></p>
+
+          <p style="margin-top:10px"><a class="cta" href="https://wa.me/919893997949?text=Hi%20I%20want%20to%20know%20your%20timings%20and%20menu" target="_blank">Ask on WhatsApp</a></p>
+        </div>
+
+        <div class="map img-frame">
+          <!-- Google Maps embed using coordinates. You can replace src with full embed link if you have it. -->
+          <iframe src="https://www.google.com/maps?q=22.6971347,75.8755301&z=17&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Flavours of Jail on map"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" style="padding:6px 0 28px">
+      <div class="menu-section">
+        <h3>Contact & Reservations</h3>
+        <p class="muted">Prefer WhatsApp? Click the button to start a chat. Or call us directly using the phone button.</p>
+        <div style="display:flex; gap:8px; margin-top:10px">
+          <a class="cta" href="https://wa.me/919893997949?text=Hi%20I%20want%20to%20reserve%20a%20table" target="_blank">Reserve via WhatsApp</a>
+          <a class="secondary" href="tel:+918993997949">Call: +91 9893997949</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="container">
+    <div style="display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap">
+      <div>
+        <div style="font-weight:700">Flavours of Jail</div>
+        <div class="muted small">1-2, Shakuntala Complex, AB Rd, Indore • Open 9 AM — 11 PM</div>
+      </div>
+      <div class="muted small">Made with ❤️ — Demo site • Replace images (cafeimg1.jpg / cafeimg2.jpg) and upload to hosting</div>
+    </div>
+  </footer>
+
+  <!-- Full menu modal / simple JS actions -->
+  <script>
+    function toggleMenu(){
+      // simple mobile menu: open nav links in a popup — for demo we keep it minimal
+      const url = '#menu';
+      window.location.href = url;
+    }
+
+    function openFullMenu(){
+      // For demo: open a simple printable menu in a new tab
+      const menuHtml = `
+        <html><head><title>Full Menu - Flavours of Jail</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <style>body{font-family:Poppins, Arial; padding:20px; color:#222} h1{color:#6B4F35} .item{display:flex; justify-content:space-between; padding:12px 0; border-bottom:1px solid #eee}</style></head>
+        <body>
+          <h1>Flavours of Jail — Full Menu</h1>
+          <div class="item"><div>Espresso</div><div>₹80</div></div>
+          <div class="item"><div>Cappuccino</div><div>₹120</div></div>
+          <div class="item"><div>Cold Coffee</div><div>₹130</div></div>
+          <div class="item"><div>Caramel Latte</div><div>₹150</div></div>
+          <div class="item"><div>Grilled Sandwich</div><div>₹140</div></div>
+          <div class="item"><div>Brownie with Ice Cream</div><div>₹160</div></div>
+          <div class="item"><div>Pasta Alfredo</div><div>₹220</div></div>
+          <div class="item"><div>French Fries</div><div>₹90</div></div>
+          <p style="margin-top:18px;color:#666">To order or reserve: <a href="https://wa.me/919893997949">WhatsApp +91 98939 97949</a></p>
+        </body></html>
+      `;
+      const w = window.open('', '_blank');
+      w.document.write(menuHtml);
+      w.document.close();
+    }
+
+    // Accessibility: keyboard focus for hero CTA
+    document.addEventListener('DOMContentLoaded', ()=>{
+      const wa = document.getElementById('whatsappBtn');
+      if(wa) wa.setAttribute('aria-label', 'Chat on WhatsApp with Flavours of Jail');
+    });
+  </script>
+</body>
+</html>
